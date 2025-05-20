@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: n8n-bot
+    runtime: docker
+    plan: free
+    region: frankfurt  # o "oregon" si estás en América
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "admin"  # Cambia esto
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "TuContraseñaSegura123!"  # Cambia esto
